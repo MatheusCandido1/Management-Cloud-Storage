@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "mcs-app",
-    "slug": "mcs-app",
+    "slug": "management-cloud-storage",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -28,6 +28,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "435b1772-3c9d-416a-94ce-88e297cea40d"
+      }
+    },
+    "owner": "candin"
   }
 }
