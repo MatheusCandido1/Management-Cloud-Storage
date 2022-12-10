@@ -18,7 +18,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.candin.managementcloudstorage"
     },
     "android": {
       "adaptiveIcon": {
