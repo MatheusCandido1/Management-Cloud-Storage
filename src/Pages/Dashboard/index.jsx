@@ -3,16 +3,21 @@ import { FlatList } from 'react-native';
 import Avatar from '../../Components/Icons/Avatar';
 import { StorageCard } from '../../Components/StorageCard';
 import { Text } from  '../../Components/Text';
+import { useNavigation } from '@react-navigation/native';
 import {
   Container,
   Welcome,
   Frame,
   WelcomeMessage,
   Content,
-  TitleContainer
+  TitleContainer,
+  ContentContainer
 } from './styles';
+import { Header } from '../../Components/Header';
 
 export function Dashboard() {
+  const navigation = useNavigation();
+
   const [storages] = useState([
     {
       id: 1,
@@ -57,33 +62,40 @@ export function Dashboard() {
       }
     },
   ])
+
+  function handleNavigateToStorage(storage) {
+    navigation.navigate('Storage', { storage })
+  }
   return (
     <Container>
-      <Welcome>
-        <WelcomeMessage>
-          <Text weight="600" color="#8b93a5" >Good Morning</Text>
-          <Text size="28" weight="700" color="#222222">Matheus Carvalho</Text>
-        </WelcomeMessage>
-        <Frame>
-          <Avatar />
-        </Frame>
-      </Welcome>
-      <Content>
-        <TitleContainer>
-          <Text size="16" weight="800" color="#687189">My Storage</Text>
-        </TitleContainer>
-        <FlatList
-          data={storages}
-          showsVerticalScrollIndicator={false}
-          renderItem={
-            (storage) => (
-              <StorageCard storage={storage} />
-            )
-          }
-          contentContainerStyle={{ marginVertical: 24 }}
-          keyExtractor={storage => storage.id}
-        />
-      </Content>
+      <Header />
+      <ContentContainer>
+        <Welcome>
+          <WelcomeMessage>
+            <Text weight="600" color="#8b93a5" >Good Morning</Text>
+            <Text size="28" weight="700" color="#222222">Matheus Carvalho</Text>
+          </WelcomeMessage>
+          <Frame>
+            <Avatar />
+          </Frame>
+        </Welcome>
+        <Content>
+          <TitleContainer>
+            <Text size="16" weight="800" color="#687189">My Storage</Text>
+          </TitleContainer>
+          <FlatList
+            data={storages}
+            showsVerticalScrollIndicator={false}
+            renderItem={
+              (storage) => (
+                <StorageCard onSelectStorage={() => handleNavigateToStorage(storage)} storage={storage} />
+              )
+            }
+            contentContainerStyle={{ marginVertical: 24 }}
+            keyExtractor={storage => storage.id}
+          />
+        </Content>
+      </ContentContainer>
     </Container>
   );
 }

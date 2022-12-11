@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 
-import { Main } from './src/Pages/Main';
+import { StackNavigator } from './src/Stacks/StackNavigator';
 
 export default function App() {
   return (
     <>
-      <Main />
+      <StackNavigator />
       <StatusBar style="light" />
     </>
   );

@@ -4,10 +4,10 @@ import { Container, Frame, IconRow, ContentRow } from './styles';
 import { Text } from  '../../Components/Text';
 import { ProgressBar } from '../ProgressBar';
 
-export function StorageCard({ storage }) {
+export function StorageCard({ storage, onSelectStorage }) {
   const image = Image.resolveAssetSource(storage.item.img).uri
   return (
-    <Container bg={storage.item.color.bg}>
+    <Container onPress={onSelectStorage} bg={storage.item.color.bg}>
       <IconRow>
         <Frame bg={storage.item.color.primary}>
           <Image style={{width: 30, height: 30}} source={{uri: image}} />
