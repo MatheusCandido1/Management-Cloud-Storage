@@ -44,7 +44,7 @@ export const BuyContainer = styled.View`
 
 export const BuyButton = styled.TouchableOpacity`
   margin-top: 32px;
-  width: 100%
+  width: 100%;
   justify-content: center;
   align-items: center;
   border-radius: 16px;
