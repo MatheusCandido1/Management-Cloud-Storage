@@ -182,7 +182,7 @@ export function Storage({ route }) {
           setIsModalVisible(false);
         }}
       >
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#FFF', paddingHorizontal: 40}}>
+        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#FFF', paddingHorizontal: 20}}>
           <View style={{marginTop: 24, width: 56, height: 6, borderRadius: 8, backgroundColor: '#83899e' }}></View>
           <Text style={{marginTop: 64}} size={36} weight="700" color="#000">20,120</Text>
           <Text style={{marginTop: 16}} size={16} weight="600" color="#a4a9b8">Interaction from 2 feb - 8 feb</Text>
