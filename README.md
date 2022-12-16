@@ -19,4 +19,4 @@
 ![Storage Screenshot](https://i.ibb.co/tqjSm1g/Screenshot-2022-12-15-at-4-07-26-PM.png)
 
 ### Storage Details
-![Storage Details Screenshot](https://i.ibb.co/H74NNjV/Screenshot-2022-12-15-at-4-07-37-PM.png)
+![Storage Details Screenshot](https://i.ibb.co/R7sQVF2/Screenshot-2022-12-15-at-4-35-43-PM.png)
