@@ -13,4 +13,10 @@
 ## My version
 
 ### Home Page
-![Home Page Screenshot](https://ibb.co/HXGwxw5](https://i.ibb.co/mShZXZf/Screenshot-2022-12-15-at-4-07-11-PM.png)
+![Home Page Screenshot](https://i.ibb.co/mShZXZf/Screenshot-2022-12-15-at-4-07-11-PM.png)
+
+### Storage
+![Storage Screenshot](https://i.ibb.co/tqjSm1g/Screenshot-2022-12-15-at-4-07-26-PM.png)
+
+### Storage Details
+![Storage Details Screenshot](https://i.ibb.co/H74NNjV/Screenshot-2022-12-15-at-4-07-37-PM.png)
