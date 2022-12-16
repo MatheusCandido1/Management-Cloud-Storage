@@ -12,5 +12,5 @@
 
 ## My version
 
-### Home PAge
-![Home Page Screenshot](https://ibb.co/HXGwxw5)
+### Home Page
+![Home Page Screenshot](https://ibb.co/HXGwxw5](https://i.ibb.co/mShZXZf/Screenshot-2022-12-15-at-4-07-11-PM.png)
